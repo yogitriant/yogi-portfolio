@@ -25,7 +25,7 @@ export default function CV() {
         "Delivered technical support for campus environment, resolving hardware and software issues.",
         "Managed IT asset lifecycle including inventory, deployment, and disposal.",
         "Developed internal monitoring systems using Node.js and Python for operational efficiency.",
-        "Built agent-based PC monitoring with real-time status and remote power control.",
+        "Analyzed operational needs and built agent-based PC monitoring with real-time status and remote power control.",
         "Led POC initiatives to evaluate and implement new technologies."
       ]
     }
@@ -91,7 +91,7 @@ export default function CV() {
         <h2 className="text-lg font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-4">Featured Project</h2>
         <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
           <h3 className="font-bold text-slate-800 mb-2">Smart Monitoring System</h3>
-          <p className="text-sm text-slate-600 mb-4 italic">Internal project: Developed using AI-assisted workflows for rapid prototyping and optimization.</p>
+          <p className="text-sm text-slate-600 mb-4 italic">Internal project: Conducted system analysis to identify operational bottlenecks, followed by development using AI-assisted workflows for rapid prototyping and optimization.</p>
           <div className="flex flex-wrap gap-2">
             {["React", "AI-Assisted", "Node.js", "Socket.io", "Python", "MongoDB"].map(t => (
               <span key={t} className="px-2 py-1 bg-white border border-slate-200 text-[10px] font-bold text-slate-500 rounded uppercase">{t}</span>

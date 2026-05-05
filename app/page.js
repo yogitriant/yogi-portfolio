@@ -99,7 +99,7 @@ export default function Home() {
         "Provided technical support for staff and academic environments, resolving hardware, software, and network issues efficiently",
         "Managed IT asset lifecycle including inventory tracking, procurement, deployment, and disposal",
         "Developed and implemented internal monitoring and automation systems to improve operational efficiency",
-        "Built agent-based PC monitoring system with real-time status, performance tracking, and remote power control",
+        "Analyzed operational needs and built agent-based PC monitoring with real-time status and remote power control",
         "Automated repetitive IT tasks using Python and Node.js",
         "Prepared and maintained technical documentation and user guides",
         "Conducted training sessions for employees on new hardware and software",
@@ -113,7 +113,7 @@ export default function Home() {
     {
       title: "Smart Monitoring System",
       type: "Key Project",
-      description: "Internal project: Agent-based monitoring system running as Windows Service (.exe). Provides real-time status and remote control capabilities.",
+      description: "Internal project: Conducted system analysis to identify operational bottlenecks, followed by development using AI-assisted workflows for rapid prototyping and optimization.",
       features: [
         "Real-time monitoring using WebSocket (Socket.IO)",
         "CPU, RAM, Disk performance tracking",
