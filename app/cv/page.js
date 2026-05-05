@@ -1,9 +1,13 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Mail, Linkedin, MapPin, Globe, Phone, ExternalLink, Monitor, Network, Code2, Zap, Wrench } from 'lucide-react';
 
 export default function CV() {
+  useEffect(() => {
+    document.title = "CV - Yogi Trianto";
+  }, []);
+
   const skills = [
     { category: "System & Support", items: ["Windows OS", "macOS Basic", "Hardware Troubleshooting", "Technical Documentation"] },
     { category: "Network", items: ["TCP/IP, DHCP, DNS", "LAN & WiFi Troubles", "WiFi Controller"] },
