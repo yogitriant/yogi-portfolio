@@ -422,6 +422,7 @@ export default function Home() {
             <div>
               <h4 className="text-white font-bold mb-1">Budi Luhur University</h4>
               <p className="text-slate-400 text-sm italic">Bachelor of Informatics Engineering — 2016</p>
+              <p className="text-blue-400 text-sm font-bold mt-2">GPA / IPK: 3.07</p>
             </div>
           </div>
           <div className="glass p-8 border-white/5">

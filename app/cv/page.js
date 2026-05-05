@@ -125,6 +125,7 @@ export default function CV() {
           <div>
             <h3 className="font-bold text-slate-800">Budi Luhur University</h3>
             <p className="text-slate-600">Bachelor of Informatics Engineering</p>
+            <p className="text-slate-500 text-sm font-medium mt-1">GPA / IPK: 3.07</p>
           </div>
           <span className="text-sm font-semibold text-slate-500">Graduated 2016</span>
         </div>
