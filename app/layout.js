@@ -4,8 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Yogi Trianto | IT Engineer",
-  description: "Portfolio of Yogi Trianto, an IT Engineer specializing in System, Automation & Monitoring.",
+  title: "Yogi Trianto | IT Officer",
+  description: "Portfolio of Yogi Trianto, an IT Officer specializing in Technical Support, System Monitoring, Automation, Quality Assurance & AI-Driven Development.",
 };
 
 export default function RootLayout({ children }) {

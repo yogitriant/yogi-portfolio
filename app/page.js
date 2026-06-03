@@ -64,6 +64,11 @@ export default function Home() {
 
   const skills = [
     {
+      category: "Software Testing & QA",
+      icon: <ShieldCheck className="w-5 h-5 text-teal-400" />,
+      items: ["Manual & Exploratory Testing", "UI/UX & Responsive Testing", "Performance & API Testing", "Bug Tracking & Documentation"]
+    },
+    {
       category: "System & Support",
       icon: <Monitor className="w-5 h-5 text-blue-400" />,
       items: ["Windows OS (Deployment, Troubleshooting, Service)", "macOS (Basic Support)", "Hardware & Peripheral Troubleshooting", "Technical Documentation"]
@@ -100,6 +105,7 @@ export default function Home() {
         "Managed IT asset lifecycle including inventory tracking, procurement, deployment, and disposal",
         "Developed and implemented internal monitoring and automation systems to improve operational efficiency",
         "Analyzed operational needs and built agent-based PC monitoring with real-time status and remote power control",
+        "Conducted comprehensive software testing (Functional, UI/UX, Performance) for internal applications to ensure reliable deployments",
         "Automated repetitive IT tasks using Python and Node.js",
         "Prepared and maintained technical documentation and user guides",
         "Conducted training sessions for employees on new hardware and software",
@@ -116,8 +122,8 @@ export default function Home() {
       description: "Internal project: Conducted system analysis to identify operational bottlenecks, followed by development using AI-assisted workflows for rapid prototyping and optimization.",
       features: [
         "Real-time monitoring using WebSocket (Socket.IO)",
+        "Executed functional & performance testing for WebSocket stability",
         "CPU, RAM, Disk performance tracking",
-        "AI-assisted development & rapid prototyping",
         "Idle-time based auto shutdown & remote power control",
         "Backend: Node.js + MongoDB",
         "Automation & data collection using Python"
@@ -131,6 +137,7 @@ export default function Home() {
       description: "A fast, modern web application that generates professional email signatures dynamically with real-time preview and copy-to-clipboard functionality.",
       features: [
         "Live preview & instant updates",
+        "Conducted cross-browser & mobile responsive UI testing",
         "Copy to clipboard functionality",
         "Modern and responsive UI",
         "Deployed on Vercel"
@@ -245,15 +252,15 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold border border-blue-500/20 mb-8">
-              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-              IT ENGINEER | SYSTEM, AUTOMATION & MONITORING
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold border border-blue-500/20 mb-8 max-w-full text-center">
+              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse shrink-0" />
+              IT OFFICER | TECHNICAL SUPPORT, SYSTEM MONITORING, AUTOMATION, QA & AI-DRIVEN DEV
             </div>
             <h1 className="text-6xl lg:text-8xl font-bold tracking-tight mb-8 leading-[1.1] text-white">
               Designing <span className="text-gradient">Stable & Scalable</span> IT Operations.
             </h1>
             <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
-              IT Engineer with <span className="text-white font-medium">7+ years of experience</span>. Expert in delivering reliable technical support, managing IT assets, and developing automation & monitoring solutions using <span className="text-white font-medium">Node.js and Python</span>.
+              IT & QA Engineer with <span className="text-white font-medium">7+ years of experience</span>. Expert in delivering reliable technical support, system automation, and comprehensive software testing to ensure <span className="text-white font-medium">high-quality, bug-free deployments</span>.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')} className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all shadow-2xl shadow-blue-600/20 flex items-center gap-2">

@@ -9,6 +9,7 @@ export default function CV() {
   }, []);
 
   const skills = [
+    { category: "Software Testing & QA", items: ["Manual Testing", "UI/UX Validation", "Cross-Browser Testing", "Bug Tracking"] },
     { category: "System & Support", items: ["Windows OS", "macOS Basic", "Hardware Troubleshooting", "Technical Documentation"] },
     { category: "Network", items: ["TCP/IP, DHCP, DNS", "LAN & WiFi Troubles", "WiFi Controller"] },
     { category: "Programming", items: ["React", "AI-Assisted Development", "Python (Automation)", "Node.js"] },
@@ -26,6 +27,7 @@ export default function CV() {
         "Managed IT asset lifecycle including inventory, deployment, and disposal.",
         "Developed internal monitoring systems using Node.js and Python for operational efficiency.",
         "Analyzed operational needs and built agent-based PC monitoring with real-time status and remote power control.",
+        "Conducted comprehensive software testing (Functional, UI/UX, Performance) for internal applications.",
         "Led POC initiatives to evaluate and implement new technologies."
       ]
     }
@@ -37,7 +39,7 @@ export default function CV() {
       <div className="border-b-2 border-slate-200 pb-8 mb-8 flex justify-between items-start">
         <div>
           <h1 className="text-4xl font-bold text-slate-900 tracking-tight mb-2">YOGI TRIANTO</h1>
-          <p className="text-xl text-blue-600 font-medium">IT Engineer | System, Automation & Monitoring</p>
+          <p className="text-lg text-blue-600 font-medium">IT Officer | Technical Support, System Monitoring, Automation, Quality Assurance & AI-Driven Development</p>
         </div>
         <div className="text-right text-sm text-slate-500 space-y-1">
           <p className="flex items-center justify-end gap-2"><Mail className="w-4 h-4" /> yogitrianto7@gmail.com</p>
@@ -50,7 +52,7 @@ export default function CV() {
       <section className="mb-10">
         <h2 className="text-lg font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-4">Personal Profile</h2>
         <p className="text-slate-600 leading-relaxed">
-          IT Engineer with 7+ years of experience in delivering reliable technical support, managing IT device assets, and ensuring stable IT operations. Strong expertise in hardware & software troubleshooting, system and network administration. Experienced in developing automation and monitoring solutions using Node.js and Python, including real-time system monitoring and performance tracking.
+          IT & QA Engineer with 7+ years of experience in delivering reliable technical support, managing IT device assets, and ensuring stable IT operations. Strong expertise in hardware & software troubleshooting, system and network administration. Experienced in comprehensive software testing, manual QA, and developing automation and monitoring solutions to ensure high-quality, bug-free application deployments.
         </p>
       </section>
 
@@ -92,7 +94,7 @@ export default function CV() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
             <h3 className="font-bold text-slate-800 mb-2">Smart Monitoring System</h3>
-            <p className="text-sm text-slate-600 mb-4 italic">Internal project: Conducted system analysis to identify operational bottlenecks, followed by development using AI-assisted workflows for rapid prototyping and optimization.</p>
+            <p className="text-sm text-slate-600 mb-4 italic">Internal project: Conducted system analysis and development using AI-assisted workflows. Executed rigorous functional and performance testing to ensure WebSocket stability and accurate data reporting.</p>
             <div className="flex flex-wrap gap-2">
               {["React", "AI-Assisted", "Node.js", "Socket.io", "Python", "MongoDB"].map(t => (
                 <span key={t} className="px-2 py-1 bg-white border border-slate-200 text-[10px] font-bold text-slate-500 rounded uppercase">{t}</span>
@@ -102,7 +104,7 @@ export default function CV() {
           <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
             <h3 className="font-bold text-slate-800 mb-1">Email Signature Generator</h3>
             <a href="https://email-signature-sand.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-blue-500 mb-2 inline-flex items-center gap-1"><ExternalLink className="w-3 h-3" /> Live Demo</a>
-            <p className="text-sm text-slate-600 mb-4 italic mt-1">A fast, modern web application that generates professional email signatures dynamically with real-time preview and copy-to-clipboard functionality.</p>
+            <p className="text-sm text-slate-600 mb-4 italic mt-1">A fast, modern web application that generates professional email signatures dynamically. Conducted extensive cross-browser and mobile responsive UI testing.</p>
             <div className="flex flex-wrap gap-2">
               {["React", "Next.js", "Tailwind CSS"].map(t => (
                 <span key={t} className="px-2 py-1 bg-white border border-slate-200 text-[10px] font-bold text-slate-500 rounded uppercase">{t}</span>
