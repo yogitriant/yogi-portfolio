@@ -86,16 +86,28 @@ export default function CV() {
         </div>
       </section>
 
-      {/* Featured Project */}
+      {/* Featured Projects */}
       <section className="mb-10">
-        <h2 className="text-lg font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-4">Featured Project</h2>
-        <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
-          <h3 className="font-bold text-slate-800 mb-2">Smart Monitoring System</h3>
-          <p className="text-sm text-slate-600 mb-4 italic">Internal project: Conducted system analysis to identify operational bottlenecks, followed by development using AI-assisted workflows for rapid prototyping and optimization.</p>
-          <div className="flex flex-wrap gap-2">
-            {["React", "AI-Assisted", "Node.js", "Socket.io", "Python", "MongoDB"].map(t => (
-              <span key={t} className="px-2 py-1 bg-white border border-slate-200 text-[10px] font-bold text-slate-500 rounded uppercase">{t}</span>
-            ))}
+        <h2 className="text-lg font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-4">Featured Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
+            <h3 className="font-bold text-slate-800 mb-2">Smart Monitoring System</h3>
+            <p className="text-sm text-slate-600 mb-4 italic">Internal project: Conducted system analysis to identify operational bottlenecks, followed by development using AI-assisted workflows for rapid prototyping and optimization.</p>
+            <div className="flex flex-wrap gap-2">
+              {["React", "AI-Assisted", "Node.js", "Socket.io", "Python", "MongoDB"].map(t => (
+                <span key={t} className="px-2 py-1 bg-white border border-slate-200 text-[10px] font-bold text-slate-500 rounded uppercase">{t}</span>
+              ))}
+            </div>
+          </div>
+          <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
+            <h3 className="font-bold text-slate-800 mb-1">Email Signature Generator</h3>
+            <a href="https://email-signature-sand.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-blue-500 mb-2 inline-flex items-center gap-1"><ExternalLink className="w-3 h-3" /> Live Demo</a>
+            <p className="text-sm text-slate-600 mb-4 italic mt-1">A fast, modern web application that generates professional email signatures dynamically with real-time preview and copy-to-clipboard functionality.</p>
+            <div className="flex flex-wrap gap-2">
+              {["React", "Next.js", "Tailwind CSS"].map(t => (
+                <span key={t} className="px-2 py-1 bg-white border border-slate-200 text-[10px] font-bold text-slate-500 rounded uppercase">{t}</span>
+              ))}
+            </div>
           </div>
         </div>
       </section>

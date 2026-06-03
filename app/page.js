@@ -124,6 +124,20 @@ export default function Home() {
       ],
       tech: ["React", "AI-Assisted Dev", "Node.js", "Socket.io", "Python", "MongoDB"],
       icon: <Monitor className="w-8 h-8 text-blue-500" />
+    },
+    {
+      title: "Email Signature Generator",
+      type: "Web Application",
+      description: "A fast, modern web application that generates professional email signatures dynamically with real-time preview and copy-to-clipboard functionality.",
+      features: [
+        "Live preview & instant updates",
+        "Copy to clipboard functionality",
+        "Modern and responsive UI",
+        "Deployed on Vercel"
+      ],
+      tech: ["React", "Next.js", "Tailwind CSS"],
+      icon: <Mail className="w-8 h-8 text-blue-500" />,
+      link: "https://email-signature-sand.vercel.app/"
     }
   ];
 
@@ -334,12 +348,13 @@ export default function Home() {
         {/* KEY PROJECTS */}
         <section id="projects" className="py-32">
           <div className="mb-20">
-            <h2 className="text-3xl font-bold mb-4 text-white">Featured Project</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white">Featured Projects</h2>
             <div className="w-20 h-1 bg-blue-600" />
           </div>
 
-          {projects.map((project, index) => (
-            <motion.div
+          <div className="space-y-12">
+            {projects.map((project, index) => (
+              <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -360,13 +375,27 @@ export default function Home() {
                   "{project.description}"
                 </p>
 
-                <button 
-                  onClick={() => setShowModal(true)} 
-                  className="mb-10 px-6 py-3 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 hover:text-blue-300 rounded-xl border border-blue-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
-                >
-                  <ImageIcon className="w-5 h-5 group-hover:scale-110 transition-transform" /> 
-                  View Application Screenshots
-                </button>
+                <div className="flex flex-wrap gap-4 mb-10">
+                  {project.title === "Smart Monitoring System" && (
+                    <button 
+                      onClick={() => setShowModal(true)} 
+                      className="px-6 py-3 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 hover:text-blue-300 rounded-xl border border-blue-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
+                    >
+                      <ImageIcon className="w-5 h-5 group-hover:scale-110 transition-transform" /> 
+                      View Application Screenshots
+                    </button>
+                  )}
+                  
+                  {project.link && (
+                    <a 
+                      href={project.link} target="_blank" rel="noopener noreferrer"
+                      className="px-6 py-3 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 hover:text-blue-300 rounded-xl border border-blue-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
+                    >
+                      <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" /> 
+                      Live Demo / View Project
+                    </a>
+                  )}
+                </div>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-10">
                   <div>
@@ -397,6 +426,7 @@ export default function Home() {
               </div>
             </motion.div>
           ))}
+          </div>
 
           <div className="mt-20">
             <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-3">
