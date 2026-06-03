@@ -14,7 +14,7 @@ export default function CV() {
     { category: "Network", items: ["TCP/IP, DHCP, DNS", "LAN & WiFi Troubles", "WiFi Controller"] },
     { category: "Programming", items: ["React", "AI-Assisted Development", "Python (Automation)", "Node.js"] },
     { category: "Monitoring & Assets", items: ["Asset Lifecycle", "Performance Monitoring", "Remote Power Control"] },
-    { category: "Tools & Databases", items: ["Postman (API)", "Chrome DevTools", "MongoDB", "Git/GitHub", "Remote Tools"] }
+    { category: "Tools & Databases", items: ["VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "MongoDB", "Git/GitHub", "Remote Tools"] }
   ];
 
   const workExperience = [

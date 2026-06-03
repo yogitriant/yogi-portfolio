@@ -91,7 +91,7 @@ export default function Home() {
     {
       category: "Tools & Databases",
       icon: <Wrench className="w-5 h-5 text-pink-400" />,
-      items: ["Postman (API Testing)", "Chrome DevTools", "MongoDB", "Git & GitHub", "Remote Desktop Tools"]
+      items: ["VS Code", "Antigravity", "Postman (API Testing)", "Chrome DevTools", "MongoDB", "Git & GitHub", "Remote Desktop Tools"]
     }
   ];
 
