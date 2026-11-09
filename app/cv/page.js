@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { Mail, Linkedin, MapPin, Globe, Phone, ExternalLink, Monitor, Network, Code2, Zap, Wrench } from 'lucide-react';
+import { Mail, Linkedin, MapPin, Globe, Phone, ExternalLink, Monitor, Network, Code2, Zap, Wrench, Trophy, Video } from 'lucide-react';
 
 export default function CV() {
   useEffect(() => {
@@ -9,12 +9,13 @@ export default function CV() {
   }, []);
 
   const skills = [
+    { category: "Multimedia & Production", items: ["CapCut (Video Editing)", "vMix (Live Streaming)", "Multimedia Content Creation", "Visual Storytelling"] },
     { category: "Software Testing & QA", items: ["Manual Testing", "UI/UX Validation", "Cross-Browser Testing", "Bug Tracking"] },
     { category: "System & Support", items: ["Windows OS", "macOS Basic", "Hardware Troubleshooting", "Technical Documentation"] },
     { category: "Network", items: ["TCP/IP, DHCP, DNS", "LAN & WiFi Troubles", "WiFi Controller"] },
     { category: "Programming", items: ["React", "AI-Assisted Development", "Python (Automation)", "Node.js"] },
     { category: "Monitoring & Assets", items: ["Asset Lifecycle", "Performance Monitoring", "Remote Power Control"] },
-    { category: "Tools & Databases", items: ["VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "MongoDB", "Git/GitHub", "Remote Tools"] }
+    { category: "Tools & Databases", items: ["CapCut", "vMix", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "Git/GitHub"] }
   ];
 
   const workExperience = [
@@ -52,7 +53,7 @@ export default function CV() {
       <section className="mb-10">
         <h2 className="text-lg font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-4">Personal Profile</h2>
         <p className="text-slate-600 leading-relaxed">
-          IT & QA Engineer with 7+ years of experience in delivering reliable technical support, managing IT device assets, and ensuring stable IT operations. Strong expertise in hardware & software troubleshooting, system and network administration. Experienced in comprehensive software testing, manual QA, and developing automation and monitoring solutions to ensure high-quality, bug-free application deployments.
+          IT Officer with 7+ years of experience at Bina Nusantara University delivering reliable technical support, managing campus IT infrastructure, and ensuring operational stability. Skilled in system automation, software QA/testing, and creative multimedia production (CapCut, vMix). Strong in cross-department collaboration and project coordination, with recognized creative excellence as the 1st Place Winner in the BINUS 45 Video Competition.
         </p>
       </section>
 
@@ -129,6 +130,22 @@ export default function CV() {
               <p className="text-xs text-slate-500">{p.desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Honors & Awards */}
+      <section className="mb-10">
+        <h2 className="text-lg font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-4">Honors & Awards</h2>
+        <div className="flex justify-between items-start">
+          <div>
+            <h3 className="font-bold text-slate-800 flex items-center gap-2">
+              Juara 1 – Video Competition BINUS 45
+            </h3>
+            <p className="text-sm text-slate-600 mt-1">
+              Bina Nusantara University — Awarded 1st place for excellence in creative video production, multimedia storytelling, and video editing.
+            </p>
+          </div>
+          <span className="text-xs font-semibold px-2.5 py-1 bg-amber-50 text-amber-700 border border-amber-200 rounded-full shrink-0">1st Place Winner</span>
         </div>
       </section>
 

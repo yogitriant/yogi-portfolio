@@ -25,7 +25,9 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
-  Menu
+  Menu,
+  Video,
+  Trophy
 } from 'lucide-react';
 
 export default function Home() {
@@ -64,6 +66,11 @@ export default function Home() {
 
   const skills = [
     {
+      category: "Multimedia & Video Production",
+      icon: <Video className="w-5 h-5 text-rose-400" />,
+      items: ["CapCut (Video Editing)", "vMix (Live Streaming & Video Switching)", "Multimedia Content Creation", "Visual Storytelling & Branding"]
+    },
+    {
       category: "Software Testing & QA",
       icon: <ShieldCheck className="w-5 h-5 text-teal-400" />,
       items: ["Manual & Exploratory Testing", "UI/UX & Responsive Testing", "Performance & API Testing", "Bug Tracking & Documentation"]
@@ -91,7 +98,7 @@ export default function Home() {
     {
       category: "Tools & Databases",
       icon: <Wrench className="w-5 h-5 text-pink-400" />,
-      items: ["VS Code", "Antigravity", "Postman (API Testing)", "Chrome DevTools", "MongoDB", "Git & GitHub", "Remote Desktop Tools"]
+      items: ["CapCut", "vMix", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "MongoDB", "Git & GitHub"]
     }
   ];
 
@@ -260,7 +267,7 @@ export default function Home() {
               Designing <span className="text-gradient">Stable & Scalable</span> IT Operations.
             </h1>
             <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
-              IT & QA Engineer with <span className="text-white font-medium">7+ years of experience</span>. Expert in delivering reliable technical support, system automation, and comprehensive software testing to ensure <span className="text-white font-medium">high-quality, bug-free deployments</span>.
+              IT Officer with <span className="text-white font-medium">7+ years of experience</span> at Bina Nusantara University. Expert in delivering reliable campus IT support, system automation, software QA, and <span className="text-white font-medium">creative multimedia production</span>.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')} className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all shadow-2xl shadow-blue-600/20 flex items-center gap-2">
@@ -450,8 +457,22 @@ export default function Home() {
           </div>
         </section>
 
-        {/* EDUCATION & INFO */}
-        <section className="py-16 grid md:grid-cols-2 gap-8">
+        {/* AWARDS, EDUCATION & INFO */}
+        <section className="py-16 grid md:grid-cols-3 gap-8">
+          <div className="glass p-8 border-white/5 border-amber-500/20 bg-gradient-to-br from-amber-500/5 to-transparent">
+            <h3 className="text-white font-bold mb-4 flex items-center gap-3">
+              <Trophy className="w-5 h-5 text-amber-400" /> Honors & Awards
+            </h3>
+            <div>
+              <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-2">
+                1st Place Winner
+              </span>
+              <h4 className="text-white font-bold mb-1">Video Competition BINUS 45</h4>
+              <p className="text-slate-400 text-xs leading-relaxed">
+                Awarded 1st place in BINUS 45 video competition for excellence in creative video production, multimedia storytelling, and editing.
+              </p>
+            </div>
+          </div>
           <div className="glass p-8 border-white/5">
             <h3 className="text-white font-bold mb-6 flex items-center gap-3">
               <BookOpen className="w-5 h-5 text-blue-400" /> Education
