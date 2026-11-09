@@ -9,13 +9,13 @@ export default function CV() {
   }, []);
 
   const skills = [
-    { category: "Multimedia & Production", items: ["CapCut (Video Editing)", "vMix (Live Streaming)", "Multimedia Content Creation", "Visual Storytelling"] },
+    { category: "Multimedia & Production", items: ["CapCut (Video Editing)", "vMix / OBS (Live Streaming)", "Multimedia Content Creation", "Visual Storytelling"] },
     { category: "Software Testing & QA", items: ["Manual Testing", "UI/UX Validation", "Cross-Browser Testing", "Bug Tracking"] },
     { category: "System & Support", items: ["Windows OS", "macOS Basic", "Hardware Troubleshooting", "Technical Documentation"] },
     { category: "Network", items: ["TCP/IP, DHCP, DNS", "LAN & WiFi Troubles", "WiFi Controller"] },
     { category: "Programming", items: ["React", "AI-Assisted Development", "Python (Automation)", "Node.js"] },
     { category: "Monitoring & Assets", items: ["Asset Lifecycle", "Performance Monitoring", "Remote Power Control"] },
-    { category: "Tools & Databases", items: ["CapCut", "vMix", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "Git/GitHub"] }
+    { category: "Tools & Databases", items: ["CapCut", "vMix / OBS", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "Git/GitHub"] }
   ];
 
   const workExperience = [
@@ -53,7 +53,7 @@ export default function CV() {
       <section className="mb-10">
         <h2 className="text-lg font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-4">Personal Profile</h2>
         <p className="text-slate-600 leading-relaxed">
-          IT Officer with 7+ years of experience at Bina Nusantara University delivering reliable technical support, managing campus IT infrastructure, and ensuring operational stability. Skilled in system automation, software QA/testing, and creative multimedia production (CapCut, vMix). Strong in cross-department collaboration and project coordination, with recognized creative excellence as the 1st Place Winner in the BINUS 45 Video Competition.
+          IT Officer with 7+ years of experience at Bina Nusantara University delivering reliable technical support, managing campus IT infrastructure, and ensuring operational stability. Skilled in system automation, software QA/testing, and creative multimedia production (CapCut, vMix / OBS). Strong in cross-department collaboration and project coordination, with recognized creative excellence as the 1st Place Winner in the BINUS 45 Video Competition.
         </p>
       </section>
 

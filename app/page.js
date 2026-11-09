@@ -68,7 +68,7 @@ export default function Home() {
     {
       category: "Multimedia & Video Production",
       icon: <Video className="w-5 h-5 text-rose-400" />,
-      items: ["CapCut (Video Editing)", "vMix (Live Streaming & Video Switching)", "Multimedia Content Creation", "Visual Storytelling & Branding"]
+      items: ["CapCut (Video Editing)", "vMix / OBS (Live Streaming & Video Switching)", "Multimedia Content Creation", "Visual Storytelling & Branding"]
     },
     {
       category: "Software Testing & QA",
@@ -98,7 +98,7 @@ export default function Home() {
     {
       category: "Tools & Databases",
       icon: <Wrench className="w-5 h-5 text-pink-400" />,
-      items: ["CapCut", "vMix", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "MongoDB", "Git & GitHub"]
+      items: ["CapCut", "vMix / OBS", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "MongoDB", "Git & GitHub"]
     }
   ];
 
