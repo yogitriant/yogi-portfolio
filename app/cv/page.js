@@ -53,7 +53,7 @@ export default function CV() {
       <section className="mb-10">
         <h2 className="text-lg font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-4">Personal Profile</h2>
         <p className="text-slate-600 leading-relaxed">
-          IT Officer with 7+ years of experience at Bina Nusantara University delivering reliable technical support, managing campus IT infrastructure, and ensuring operational stability. Skilled in system automation, software QA/testing, and creative multimedia production (CapCut, vMix / OBS). Strong in cross-department collaboration and project coordination, with recognized creative excellence as the 1st Place Winner in the BINUS 45 Video Competition.
+          IT Officer with 7+ years of experience at Bina Nusantara University delivering reliable technical support, managing campus IT infrastructure, and ensuring operational stability. Experienced in system automation, software QA/testing, technical documentation, and cross-department project coordination.
         </p>
       </section>
 

@@ -267,7 +267,7 @@ export default function Home() {
               Designing <span className="text-gradient">Stable & Scalable</span> IT Operations.
             </h1>
             <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
-              IT Officer with <span className="text-white font-medium">7+ years of experience</span> at Bina Nusantara University. Expert in delivering reliable campus IT support, system automation, software QA, and <span className="text-white font-medium">creative multimedia production</span>.
+              IT Officer with <span className="text-white font-medium">7+ years of experience</span> at Bina Nusantara University. Expert in delivering reliable campus IT support, system automation, software QA, and technical operations.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')} className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all shadow-2xl shadow-blue-600/20 flex items-center gap-2">
