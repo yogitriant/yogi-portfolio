@@ -15,7 +15,7 @@ export default function CV() {
     { category: "Network", items: ["TCP/IP, DHCP, DNS", "LAN & WiFi Troubleshooting", "WiFi Controller"] },
     { category: "Programming", items: ["AI-Assisted Development", "React", "Python (Automation)", "Node.js"] },
     { category: "Monitoring & Assets", items: ["Asset Lifecycle", "Performance Monitoring", "Remote Power Control"] },
-    { category: "Tools & Databases", items: ["VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "Git/GitHub"] }
+    { category: "Tools & Databases", items: ["Power BI (Data & Analytics)", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "Git/GitHub"] }
   ];
 
   const workExperience = [
@@ -29,6 +29,7 @@ export default function CV() {
         "Developed internal monitoring systems using Node.js and Python for operational efficiency.",
         "Analyzed operational needs and built agent-based PC monitoring with real-time status and remote power control.",
         "Conducted comprehensive software testing (Functional, UI/UX, Performance) for internal applications.",
+        "Utilized Power BI for operational data processing, asset reporting, and performance tracking.",
         "Led POC initiatives to evaluate and implement new technologies."
       ]
     }

@@ -98,7 +98,7 @@ export default function Home() {
     {
       category: "Tools & Databases",
       icon: <Wrench className="w-5 h-5 text-pink-400" />,
-      items: ["VS Code", "Antigravity", "Postman (API Testing)", "Chrome DevTools", "MongoDB", "Git & GitHub"]
+      items: ["Power BI (Data Visualization & Reporting)", "VS Code", "Antigravity", "Postman (API Testing)", "Chrome DevTools", "MongoDB", "Git & GitHub"]
     }
   ];
 
@@ -114,6 +114,7 @@ export default function Home() {
         "Analyzed operational needs and built agent-based PC monitoring with real-time status and remote power control",
         "Conducted comprehensive software testing (Functional, UI/UX, Performance) for internal applications to ensure reliable deployments",
         "Automated repetitive IT tasks using Python and Node.js",
+        "Utilized Power BI for operational data processing, asset reporting, and performance dashboards",
         "Prepared and maintained technical documentation and user guides",
         "Conducted training sessions for employees on new hardware and software",
         "Collaborated with multiple departments and external vendors to deliver effective IT solutions",
