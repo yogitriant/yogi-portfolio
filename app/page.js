@@ -66,9 +66,9 @@ export default function Home() {
 
   const skills = [
     {
-      category: "Multimedia & Video Production",
+      category: "Multimedia & Design",
       icon: <Video className="w-5 h-5 text-rose-400" />,
-      items: ["CapCut (Video Editing)", "vMix / OBS (Live Streaming & Video Switching)", "Figma", "Canva", "Multimedia Content Creation", "Visual Storytelling & Branding"]
+      items: ["Figma (UI/UX Design)", "Canva (Visual & Branding)", "CapCut (Video Editing)", "vMix / OBS (Live Streaming)", "Content Creation"]
     },
     {
       category: "Software Testing & QA",
@@ -98,7 +98,7 @@ export default function Home() {
     {
       category: "Tools & Databases",
       icon: <Wrench className="w-5 h-5 text-pink-400" />,
-      items: ["CapCut", "vMix / OBS", "Figma", "Canva", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "MongoDB", "Git & GitHub"]
+      items: ["VS Code", "Antigravity", "Postman (API Testing)", "Chrome DevTools", "MongoDB", "Git & GitHub"]
     }
   ];
 

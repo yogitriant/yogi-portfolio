@@ -9,13 +9,13 @@ export default function CV() {
   }, []);
 
   const skills = [
-    { category: "Multimedia & Production", items: ["CapCut (Video Editing)", "vMix / OBS (Live Streaming)", "Figma", "Canva", "Multimedia Content Creation", "Visual Storytelling"] },
+    { category: "Multimedia & Design", items: ["Figma (UI/UX)", "Canva (Branding)", "CapCut (Video Editing)", "vMix / OBS (Live Streaming)", "Content Creation"] },
     { category: "Software Testing & QA", items: ["Manual Testing", "UI/UX Validation", "Cross-Browser Testing", "Bug Tracking"] },
     { category: "System & Support", items: ["Windows OS", "macOS Basic", "Hardware Troubleshooting", "Technical Documentation"] },
     { category: "Network", items: ["TCP/IP, DHCP, DNS", "LAN & WiFi Troubleshooting", "WiFi Controller"] },
     { category: "Programming", items: ["AI-Assisted Development", "React", "Python (Automation)", "Node.js"] },
     { category: "Monitoring & Assets", items: ["Asset Lifecycle", "Performance Monitoring", "Remote Power Control"] },
-    { category: "Tools & Databases", items: ["CapCut", "vMix / OBS", "Figma", "Canva", "VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "Git/GitHub"] }
+    { category: "Tools & Databases", items: ["VS Code", "Antigravity", "Postman (API)", "Chrome DevTools", "Git/GitHub"] }
   ];
 
   const workExperience = [
