@@ -88,7 +88,7 @@ export default function Home() {
     {
       category: "Programming & Automation",
       icon: <Code2 className="w-5 h-5 text-emerald-400" />,
-      items: ["React (Frontend Development)", "AI-Assisted Development (Workflow Optimization)", "Python (Automation, Scripting)", "Node.js (Express, Socket.IO, ESM)"]
+      items: ["AI-Assisted Development (Workflow Optimization)", "React (Frontend Development)", "Python (Automation, Scripting)", "Node.js (Express, Socket.IO, ESM)"]
     },
     {
       category: "Monitoring & Assets",
