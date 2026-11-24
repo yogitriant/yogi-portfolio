@@ -27,7 +27,8 @@ import {
   ChevronRight,
   Menu,
   Video,
-  Trophy
+  Trophy,
+  Smartphone
 } from 'lucide-react';
 
 export default function Home() {
@@ -138,6 +139,21 @@ export default function Home() {
       ],
       tech: ["React", "AI-Assisted Dev", "Node.js", "Socket.io", "Python", "MongoDB"],
       icon: <Monitor className="w-8 h-8 text-blue-500" />
+    },
+    {
+      title: "nugas.pro",
+      type: "Mobile Learning App",
+      description: "Independent Mobile Learning Application: Built to address modern student challenges—instant-answer habits, short attention spans, and digital distractions—by guiding step-by-step reasoning through Socratic AI tutoring, concise note-to-flashcard conversion, and interactive quizzes, supported by functional/UI testing and secure backend workflows.",
+      features: [
+        "Socratic AI tutoring for step-by-step reasoning",
+        "Concise note-to-flashcard conversion & interactive quizzes",
+        "Conducted mobile functional, UI/UX, and edge-case testing",
+        "Secure backend workflows & payment integration (Midtrans)",
+        "AI reasoning integration with Google Gemini API",
+        "Cross-platform client built with Flutter & Dart"
+      ],
+      tech: ["Flutter", "Dart", "FastAPI", "Python", "Google Gemini API", "Supabase", "PostgreSQL", "Midtrans"],
+      icon: <Smartphone className="w-8 h-8 text-blue-500" />
     },
     {
       title: "Email Signature Generator",
@@ -379,7 +395,7 @@ export default function Home() {
               <div className="lg:col-span-2 bg-gradient-to-br from-blue-600/20 to-purple-600/20 p-12 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-white/10">
                 <div className="text-center">
                   <div className="w-20 h-20 rounded-2xl bg-white/5 flex items-center justify-center mx-auto mb-6 backdrop-blur-3xl shadow-2xl">
-                    <Power className="w-10 h-10 text-blue-500" />
+                    {project.icon ? React.cloneElement(project.icon, { className: "w-10 h-10 text-blue-500" }) : <Power className="w-10 h-10 text-blue-500" />}
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
                   <p className="text-blue-400 text-sm font-bold uppercase tracking-widest">{project.type}</p>
