@@ -28,14 +28,11 @@ import {
   Menu,
   Video,
   Trophy,
-  Smartphone,
-  Download,
-  Play
+  Smartphone
 } from 'lucide-react';
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
-  const [popupInfo, setPopupInfo] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -424,37 +421,6 @@ export default function Home() {
                       View Application Screenshots
                     </button>
                   )}
-
-                  {project.title === "nugas.pro" && (
-                    <>
-                      <button
-                        onClick={() => setPopupInfo({
-                          title: "Google Play Store",
-                          badge: "Coming Soon",
-                          message: "Aplikasi nugas.pro saat ini sedang dalam persiapan rilis di Google Play Store. Nantikan update segera!",
-                          type: "playstore"
-                        })}
-                        className="px-6 py-3 bg-emerald-600/10 hover:bg-emerald-600/20 text-emerald-400 hover:text-emerald-300 rounded-xl border border-emerald-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
-                      >
-                        <Play className="w-4 h-4 fill-emerald-400 group-hover:scale-110 transition-transform" />
-                        Play Store
-                      </button>
-
-                      <button
-                        onClick={() => setPopupInfo({
-                          title: "Download Langsung",
-                          badge: "Direct APK / Demo",
-                          message: "Untuk mencoba instalasi APK atau versi demo aplikasi nugas.pro, silakan hubungi tim kami:",
-                          email: "admin.nugas@gmail.com",
-                          type: "download"
-                        })}
-                        className="px-6 py-3 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 hover:text-blue-300 rounded-xl border border-blue-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
-                      >
-                        <Download className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                        Download Langsung
-                      </button>
-                    </>
-                  )}
                   
                   {project.link && (
                     <a 
@@ -652,73 +618,6 @@ export default function Home() {
                   />
                 ))}
               </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* NUGAS.PRO ACTION POPUP */}
-      <AnimatePresence>
-        {popupInfo && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setPopupInfo(null)}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
-          >
-            <motion.div
-              initial={{ scale: 0.95, opacity: 0, y: 20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.95, opacity: 0, y: 20 }}
-              onClick={(e) => e.stopPropagation()}
-              className="relative max-w-md w-full bg-[#0a0a0f] border border-white/10 rounded-2xl p-6 md:p-8 shadow-2xl text-center"
-            >
-              <button 
-                onClick={() => setPopupInfo(null)}
-                className="absolute top-4 right-4 p-2 text-slate-400 hover:text-white hover:bg-white/10 rounded-lg transition-all"
-              >
-                <X className="w-5 h-5" />
-              </button>
-
-              <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mx-auto mb-4">
-                {popupInfo.type === 'playstore' ? (
-                  <Play className="w-7 h-7 fill-emerald-400 text-emerald-400" />
-                ) : (
-                  <Download className="w-7 h-7 text-blue-400" />
-                )}
-              </div>
-
-              {popupInfo.badge && (
-                <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${popupInfo.type === 'playstore' ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-blue-500/10 text-blue-400 border border-blue-500/20'}`}>
-                  {popupInfo.badge}
-                </span>
-              )}
-
-              <h3 className="text-xl font-bold text-white mb-2">{popupInfo.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                {popupInfo.message}
-              </p>
-
-              {popupInfo.email && (
-                <div className="mb-6 p-4 rounded-xl bg-white/5 border border-white/10 flex flex-col gap-1.5 text-center">
-                  <span className="text-[10px] text-slate-500 uppercase tracking-widest font-semibold">Email Kontak</span>
-                  <a 
-                    href={`mailto:${popupInfo.email}?subject=Permintaan Download APK nugas.pro`}
-                    className="text-blue-400 hover:text-blue-300 font-bold text-sm md:text-base flex items-center justify-center gap-2 transition-colors"
-                  >
-                    <Mail className="w-4 h-4" />
-                    {popupInfo.email}
-                  </a>
-                </div>
-              )}
-
-              <button
-                onClick={() => setPopupInfo(null)}
-                className="w-full py-3 bg-white text-black font-bold rounded-xl hover:bg-slate-200 transition-all text-sm"
-              >
-                Tutup
-              </button>
             </motion.div>
           </motion.div>
         )}
