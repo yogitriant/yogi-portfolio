@@ -100,7 +100,7 @@ export default function CV() {
 
           <div className="mb-4">
             <h3 className="text-sm font-bold text-slate-800">nugas.pro</h3>
-            <p className="text-xs text-slate-600 italic mb-1">Independent Mobile Learning Application: Built to address modern student challenges—instant-answer habits, short attention spans, and digital distractions—by guiding step-by-step reasoning through Socratic AI tutoring, concise note-to-flashcard conversion, and interactive quizzes, supported by functional/UI testing and secure backend workflows.</p>
+            <p className="text-xs text-slate-600 italic mb-1">Independent Mobile Learning Application: Built to address modern student learning challenges—limited 24/7 tutor availability, instant-answer habits, short attention spans, and digital distractions—by enabling on-demand step-by-step Socratic AI tutoring, note-to-flashcard conversion, and interactive quizzes, supported by functional/UI testing and secure backend workflows.</p>
             <p className="text-xs text-slate-500">Tech: Flutter, Dart, FastAPI, Python, Google Gemini API, Supabase (PostgreSQL), Midtrans</p>
           </div>
 
