@@ -230,13 +230,14 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-400"
+          className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-400 items-center"
         >
           <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="hover:text-blue-400 transition-colors">About</a>
           <a href="#skills" onClick={(e) => scrollToSection(e, 'skills')} className="hover:text-blue-400 transition-colors">Skills</a>
           <a href="#experience" onClick={(e) => scrollToSection(e, 'experience')} className="hover:text-blue-400 transition-colors">Experience</a>
           <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')} className="hover:text-blue-400 transition-colors">Projects</a>
           <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="hover:text-blue-400 transition-colors">Contact</a>
+          <a href="/cv" className="text-blue-400 hover:text-blue-300 transition-colors font-bold">CV / Resume</a>
         </motion.div>
 
         {/* MOBILE MENU TOGGLE */}
@@ -260,7 +261,8 @@ export default function Home() {
               <a href="#skills" onClick={(e) => { scrollToSection(e, 'skills'); setIsMobileMenuOpen(false); }} className="hover:text-blue-400 transition-colors py-3 border-b border-white/5">Skills</a>
               <a href="#experience" onClick={(e) => { scrollToSection(e, 'experience'); setIsMobileMenuOpen(false); }} className="hover:text-blue-400 transition-colors py-3 border-b border-white/5">Experience</a>
               <a href="#projects" onClick={(e) => { scrollToSection(e, 'projects'); setIsMobileMenuOpen(false); }} className="hover:text-blue-400 transition-colors py-3 border-b border-white/5">Projects</a>
-              <a href="#contact" onClick={(e) => { scrollToSection(e, 'contact'); setIsMobileMenuOpen(false); }} className="hover:text-blue-400 transition-colors py-3">Contact</a>
+              <a href="#contact" onClick={(e) => { scrollToSection(e, 'contact'); setIsMobileMenuOpen(false); }} className="hover:text-blue-400 transition-colors py-3 border-b border-white/5">Contact</a>
+              <a href="/cv" className="text-blue-400 hover:text-blue-300 transition-colors py-3 font-bold">CV / Resume</a>
             </motion.div>
           )}
         </AnimatePresence>
@@ -292,6 +294,9 @@ export default function Home() {
               </a>
               <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="px-8 py-4 glass hover:bg-white/10 text-white rounded-xl font-bold transition-all">
                 Let's Talk
+              </a>
+              <a href="/cv" className="px-8 py-4 glass hover:bg-white/10 text-blue-400 hover:text-blue-300 rounded-xl font-bold transition-all">
+                CV / Resume
               </a>
             </div>
           </motion.div>
@@ -514,17 +519,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="glass p-16 text-center relative overflow-hidden border-white/10"
+            className="glass p-8 md:p-16 text-center relative overflow-hidden border-white/10"
           >
-            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 blur-[150px]" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/10 blur-[150px]" />
+            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 blur-[150px] pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/10 blur-[150px] pointer-events-none" />
 
-            <h2 className="text-5xl font-bold mb-8 text-white tracking-tight">Let's build something <span className="text-gradient">exceptional</span>.</h2>
-            <p className="text-slate-400 max-w-xl mx-auto mb-12 leading-relaxed text-lg font-light">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white tracking-tight">Let's build something <span className="text-gradient">exceptional</span>.</h2>
+            <p className="text-slate-400 max-w-xl mx-auto mb-12 leading-relaxed text-base md:text-lg font-light relative z-10">
               Open for collaboration on IT infrastructure, system automation, and monitoring solutions.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-8 mb-12">
+            <div className="flex flex-wrap justify-center gap-8 mb-12 relative z-10">
               <a href="mailto:yogitrianto7@gmail.com" className="flex items-center gap-3 text-slate-400 hover:text-white transition-all group">
                 <div className="p-3 glass rounded-full group-hover:bg-blue-600/20 group-hover:border-blue-500/50 transition-all">
                   <Mail className="w-6 h-6" />
@@ -547,7 +552,7 @@ export default function Home() {
 
             <a
               href="/cv"
-              className="inline-block px-10 py-4 bg-white text-black rounded-xl font-bold hover:bg-slate-200 transition-all shadow-xl"
+              className="relative z-20 inline-block px-10 py-4 bg-white text-black rounded-xl font-bold hover:bg-slate-200 transition-all shadow-xl cursor-pointer"
             >
               Go to CV / Resume
             </a>
