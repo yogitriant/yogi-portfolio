@@ -143,7 +143,7 @@ export default function Home() {
     {
       title: "nugas.pro",
       type: "Mobile Learning App",
-      description: "Independent Mobile Learning Application: Built to address modern student learning challenges—limited 24/7 tutor availability, instant-answer habits, short attention spans, and digital distractions—by enabling on-demand step-by-step Socratic AI tutoring, note-to-flashcard conversion, and interactive quizzes, supported by functional/UI testing and secure backend workflows.",
+      description: "Independent Mobile Learning Application: Built to address modern student learning challenges (limited 24/7 tutor availability, instant-answer habits, short attention spans, and digital distractions) by enabling on-demand step-by-step Socratic AI tutoring, note-to-flashcard conversion, and interactive quizzes, supported by functional/UI testing and secure backend workflows.",
       features: [
         "Socratic AI tutoring for step-by-step reasoning",
         "Concise note-to-flashcard conversion & interactive quizzes",
@@ -411,27 +411,29 @@ export default function Home() {
                   "{project.description}"
                 </p>
 
-                <div className="flex flex-wrap gap-4 mb-10">
-                  {project.title === "Smart Monitoring System" && (
-                    <button 
-                      onClick={() => setShowModal(true)} 
-                      className="px-6 py-3 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 hover:text-blue-300 rounded-xl border border-blue-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
-                    >
-                      <ImageIcon className="w-5 h-5 group-hover:scale-110 transition-transform" /> 
-                      View Application Screenshots
-                    </button>
-                  )}
-                  
-                  {project.link && (
-                    <a 
-                      href={project.link} target="_blank" rel="noopener noreferrer"
-                      className="px-6 py-3 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 hover:text-blue-300 rounded-xl border border-blue-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
-                    >
-                      <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" /> 
-                      Live Demo / View Project
-                    </a>
-                  )}
-                </div>
+                {(project.title === "Smart Monitoring System" || project.link) && (
+                  <div className="flex flex-wrap gap-4 mb-10">
+                    {project.title === "Smart Monitoring System" && (
+                      <button 
+                        onClick={() => setShowModal(true)} 
+                        className="px-6 py-3 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 hover:text-blue-300 rounded-xl border border-blue-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
+                      >
+                        <ImageIcon className="w-5 h-5 group-hover:scale-110 transition-transform" /> 
+                        View Application Screenshots
+                      </button>
+                    )}
+                    
+                    {project.link && (
+                      <a 
+                        href={project.link} target="_blank" rel="noopener noreferrer"
+                        className="px-6 py-3 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 hover:text-blue-300 rounded-xl border border-blue-500/20 flex items-center gap-2 text-sm font-bold transition-all group shadow-lg"
+                      >
+                        <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" /> 
+                        Live Demo / View Project
+                      </a>
+                    )}
+                  </div>
+                )}
 
                 <div className="grid md:grid-cols-2 gap-8 mb-10">
                   <div>
@@ -441,7 +443,7 @@ export default function Home() {
                     <ul className="space-y-2 text-sm text-slate-400">
                       {project.features.map((f, i) => (
                         <li key={i} className="flex gap-2">
-                          <span className="text-blue-500/50">-</span> {f}
+                          <span className="text-blue-500/50">•</span> {f}
                         </li>
                       ))}
                     </ul>
